@@ -1,0 +1,351 @@
+/* *{
+  border: solid red 2px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+.card-wrapper {
+  display: grid;
+  width: 100%;
+  /* justify-content: space-evenly; */
+  margin-top: 2rem;
+}
+
+.grid-4 {
+  grid-template-columns: auto auto auto auto;
+}
+.grid-2 {
+  grid-template-columns: auto auto;
+}
+.grid-3 {
+  grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 1191px) {
+  .grid-4,
+  .grid-3 {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  /* .grid-4,
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: auto;
+  } */
+  .btn.tab-btn {
+    width: 30vw !important;
+  }
+  .task-card {
+    width: 40vw !important;
+    height: 60vw !important;
+    padding: 15px;
+  }
+}
+
+.btn-group.mt-5 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+}
+
+.btn-group.mt-5 > .btn {
+  flex: none;
+}
+
+.card {
+  width: 18rem;
+  border: none;
+}
+
+.card-background {
+  background-color: #181818 !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Anurati;
+  src: url("/assets/fonts/Anurati-Regular.otf");
+}
+
+:root {
+  --primary-1: #000000;
+  --primary-2: #373737;
+
+  --primary-3: #ffd700;
+  --primary-4: #2962ff;
+  --primary-5: #fff;
+  --main-font: "Red Hat Display", sans-serif;
+  --title-font: "Anurati", "Red Hat Display";
+}
+
+.main-1 {
+  background-color: black;
+}
+
+.main-2 {
+  background-color: #181818;
+}
+
+.slogan-title {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 4vw;
+  letter-spacing: 4px;
+}
+
+.slogan-desc {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 2vw;
+  letter-spacing: 1px;
+}
+
+.slogan-club-name {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 4vw;
+  letter-spacing: 2px;
+}
+
+.desc-title {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 4vw;
+  letter-spacing: 4px;
+}
+
+.text {
+  color: white;
+  font-size: 35px;
+  padding: 80px 120px 20px;
+}
+
+/* tabs */
+
+.nav {
+  background-color: #336683;
+  padding: 25px;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #336683 !important;
+  background-color: #a4d6ef !important;
+  border-color: transparent transparent #f3f3f3;
+}
+#tabs .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  color: #eee;
+  font-size: 20px;
+  background-color: #336683;
+  border: 1px solid #a4d6ef;
+  color: #a4d6ef;
+}
+
+.nav-item {
+  border-radius: 0 !important;
+}
+
+.nav-item:last-child {
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+.nav-item:first-child {
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #a4d6ef !important;
+}
+
+.sloganImg {
+  margin: 5rem 0 0 10rem;
+}
+
+.button-box {
+  margin: 6rem 0 0 8rem;
+  width: 500px;
+}
+.button-box button {
+  font-size: 20px;
+}
+
+.button-box button:nth-child(2) {
+  margin-left: 30px;
+}
+
+@media (max-width: 1300px) and (min-width: 993px) {
+  .sloganImg {
+    margin: 5rem 0 0 5rem;
+  }
+
+  .button-box {
+    width: 250px;
+    margin: 5% 0% 0% 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  .button-box button {
+    font-size: 15px;
+  }
+  .button-box button:nth-child(2) {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .button-box {
+    margin: 5% 0 0 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-box button {
+    font-size: 13px;
+    width: 50%;
+  }
+
+  .button-box button:nth-child(2) {
+    margin: 30px 0 0 0;
+  }
+
+  .sloganImg {
+    margin: 15% 0 0 10%;
+  }
+
+  .desc-title {
+    font-size: 6vw;
+  }
+
+  .laptop-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sloganNbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 100%;
+  }
+  .sloganImg {
+    margin: 30px 0 0 0;
+  }
+  .slogan-title {
+    font-size: 8vw;
+  }
+  .slogan-desc {
+    font-size: 4vw;
+  }
+  .slogan-club-name {
+    font-size: 8vw;
+  }
+  .button-box {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px 0;
+  }
+  .button-box button {
+    font-size: 15px;
+    width: 50%;
+    align-self: center;
+  }
+  .button-box button:nth-child(2) {
+    margin: 30px 0 0 0;
+  }
+  .jumbotron {
+    flex: 100%;
+  }
+  .desc-title {
+    font-size: 7vw;
+  }
+}
+
+.desc-section {
+  padding: 20px;
+  align-items: center;
+}
+
+.footer {
+  background-color: #181818 !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul a {
+  display: block;
+}
+
+.navbar-nav {
+  align-items: center !important;
+  text-align: center;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  font-family: 'Poppins',sans-serif;
+  white-space: nowrap;
+}
+
+@media (max-width:1045px) {
+  .homebox .show {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .navbar-nav {
+    height: 100%;
+    gap:10px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+.opacity.zero {
+  opacity: 0;
+}
+.opacity.one {
+  opacity: 1;
+}
+
+.abs {
+  position: absolute;
+}
