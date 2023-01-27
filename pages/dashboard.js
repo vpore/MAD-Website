@@ -20,6 +20,7 @@ export default function Dashboard(props) {
         <div className={styles.reminderTitle}>New Reminder</div>
         <div className={styles.reminderBody}>
           <div className={styles.reminderBodyLeft}>
+            
             <Element title="Title of Reminder">
               <input type="text" name="title" id="title" placeholder="Enter a task here" />
             </Element>
